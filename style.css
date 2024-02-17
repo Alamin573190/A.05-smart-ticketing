@@ -1,0 +1,21 @@
+*{
+    /* font-family: "Raleway", sans-serif; */
+    
+
+}
+.font-inter{
+
+    font-family: "Inter Tight", sans-serif;
+}
+.font-raleway {
+     font-family: "Raleway", sans-serif;
+}
+.img{
+    position: relative;
+    right: 250px;
+}
+.img2{
+    position: relative;
+    left: 930px;
+    bottom: 292px;
+}

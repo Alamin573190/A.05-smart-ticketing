@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 05</title>
+    <!-- font familly -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a24099b832.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-inter">
+    <header class="max-w-[1150px] mx-auto">
+        <!-- nav part -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                            <li><a>Home</a>
+                            </li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <li class="font-raleway list-none text-3xl font-extrabold">P-Ticket</li>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a>
+                        </li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end text-xl font-bold  ">
+                    <a class="btn bg-green-100 text-[#1DD100]">Bus<i class="fa-solid fa-van-shuttle"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- hero part -->
+        <div class="hero min-h-screen rounded-3xl my-10" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="w-2/3">
+                    <h1 class="mb-5 text-6xl font-extrabold font-raleway">End-to-End Travel with <br><span
+                            class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="mb-5">
+                        A bus is a large motor vehicle which carries passengers from one place to another. Buses drive
+                        along particular routes, and you have to pay to travel in them. Collins COBUILD Advanced
+                        Learner's Dictionary. Copyright © HarperCollins Publishers..</p>
+                    <button class="btn btn-primary font-raleway text-[#030712] font-bold bg-[#1DD100]">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!-- best offer section -->
+        <section class="max-w-[1150px] mx-auto my-16">
+            <h2 class="font-raleway text-4xl font-bold text-center">Best offers for you</h2>
+            <div class="flex gap-6 my-10">
+                <div class="bg-[#FFBF0F] rounded-xl flex flex-1 justify-between p-10 ">
+                    <div class="">
+                        <h1 class="text-4xl font-extrabold">15% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-[18px] text-gray-500">use by January 2024</p>
+                    </div>
+
+                    <div class="font-raleway">
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p class="text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+                <img class=" img h-[200px]" src="./images/cupon-devider.png" alt="">
+                <div class="bg-[#F78C9C] rounded-xl flex flex-1 justify-between p-10">
+                    <div class="">
+                        <h1 class="text-4xl font-extrabold">20% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-[18px] text-gray-500">use by January 2024</p>
+                    </div>
+                    <div class="font-raleway">
+                        <h1 class="text-3xl font-bold">Couple 20</h1>
+                        <p class="text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+                <img class=" img h-[200px]" src="./images/cupon-devider.png" alt="">
+            </div>
+            <div class="flex justify-center">
+                <button class="font-raleway btn border-1 border-green-400 ">See All Offers</button>
+            </div>
+
+        </section>
+        <!-- PH paribahan section -->
+        <section class="bg-[#F7F8F8] border-t-2 border-green-400 rounded-t-3xl py-20">
+            <div class="text-center w-2/3 mx-auto space-y-4">
+                <h2 class="font-raleway font-bold text-4xl">P.H Paribahan</h2>
+                <p class="text-[#030712]"> A bus is a large motor vehicle which carries passengers from one place to
+                    another. Buses drive along particular routes, and you have to pay to travel </p>
+            </div>
+            <div class="flex justify-between items-center max-w-[1150px] mx-auto bg-[#FFFFFF] p-5 mt-10 rounded-2xl">
+                <div class=" w-3/4 ">
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./images/bus-logo.png" alt="">
+                            <div>
+                                <p class="font-raleway font-bold text-3xl">Greenline Paribahan</p>
+                                <p class="text-gray-500"> Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn text-green-400 bg-green-100"><img src="./images/seat-green.png" alt="">
+                                40 Seats left</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F7F8F8] mt-5 p-5 rounded-xl">
+                        <div class="font-raleway flex justify-between">
+                           <div class="space-y-5">
+                            <p>Route</p>
+                            <p>Departure Time</p>
+                           </div>
+                           
+                           <div class="space-y-5">
+                            <p>Dhaka - Sylhet</p>
+                            <p>9:00 PM</p>
+                           </div>
+                        </div>
+                        
+                        <div class="mt-5 flex gap-4 justify-between">
+                            <p class="bg-gray-200 py-2 px-10 rounded-xl">Boarding Point - Laxmipur</p>
+                            <p class="bg-gray-200 py-2 px-10 rounded-xl">Dropping Point - Bogura</p>
+                            <p class="bg-gray-200 py-2 px-10 rounded-xl">Est. Time - 11 Hour</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-1/4  font-raleway text-center mx-auto space-y-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./images/fare.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-3xl">550 Taka</h3>
+                    <p class="text-gray-500">Per Seat </p>
+                </div>
+
+            </div>
+            <img class="img2 h-[295px]" src="./images/info-devider.png" alt="">
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
