@@ -1,6 +1,6 @@
 *{
     /* font-family: "Raleway", sans-serif; */
-    
+    box-sizing: border-box;
 
 }
 .font-inter{
@@ -15,7 +15,9 @@
     right: 250px;
 }
 .img2{
-    position: relative;
-    left: 930px;
-    bottom: 292px;
+   
+    position: absolute;
+    
+    right:292px;
+    top: 1410px;
 }
