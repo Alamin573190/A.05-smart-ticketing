@@ -332,14 +332,14 @@
                             <p>Tottal Price</p>
                             <p>BDT <span id="tottal-price">0</span></p>
                         </div>
-
-                        <label class="input input-bordered flex items-center gap-2 my-4">
-                            <input id="copon-btn" type="text" class="grow bottom-0" placeholder="Have any copupon?" />
-                            <span class="bg-green-500 text-white p-2 rounded-lg font-semibold">Apply</span>
-                        </label>
+                        <!-- input coupon button -->
+                        <div id="coupon-div" class="w-full my-2">
+                            <input id="coupon-field" class=" w-80 p-3 mr-[-5px] rounded-l-xl" id="copon-btn" type="text" class="grow bottom-0" placeholder="Have any copupon?" />
+                            <button id="coupon-btn" class="bg-green-500 text-white p-3 rounded-r-lg font-semibold">Apply</button>
+                        </div>
                         <div class="flex justify-between mt-2">
                             <p>Grand Total</p>
-                            <p>BDT 0</p>
+                            <p>BDT <span id="grand-tottal">0</span></p>
                         </div>
 
                     </div>
@@ -371,9 +371,9 @@
                             <div class="label">
 
                         </label>
-                        <label class="form-control w-full mt-8">
+                        <label  class="form-control w-full mt-8">
 
-                            <button class="btn btn-wide w-full bg-green-500">Next</button>
+                            <button onclick="congratulationSection ()"  class="btn btn-wide w-full bg-green-500">Next</button>
                             <div class="label">
                                 <span class="label-text-alt">Terms and Conditions</span>
 
@@ -410,6 +410,20 @@
     </footer>
    
        </footer>
+       <!--  congratulation section -->
+       <div id="succes" class="congratulation-section hidden bg-white flex flex-col items-center justify-center text-center   ">
+        <div class="
+        bg-[#faf5f5] space-y-5 w-[800px] p-20 " >
+            <div class="flex justify-center">
+                <img src="./images/success.png" alt="">
+            </div>
+            <p class="text-green-400 text-2xl ">SUCCESS</p>
+            <p>Thank you for Booking Our Bus Seats. 
+                We are working hard to find the best service and deals for you. 
+                Shortly you will find a confirmation in your email.</p>
+                <button class="btn bg-green-500 px-10 py-5">Continue</button>
+        </div>
+       </div>
     
     <script src="js/script.js"></script>
 </body>

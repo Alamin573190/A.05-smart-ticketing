@@ -24,19 +24,21 @@ for (const seat of allSeat){
       p.innerText=seatName;
       p2.innerText="Economoy";
       SeatPrice.innerText=("550");
-     const SeatPriceNum = parseInt(SeatPrice.innerText)
+    //  const SeatPriceNum = parseInt(SeatPrice.innerText)
     //   seatPrice =parseInt(p3.innerText);
-    // console.log(typeof SeatPriceNum);
+   
        
       li.appendChild(p);
       li.appendChild(p2); 
       li.appendChild(SeatPrice);
         
         seatPriceContainer.appendChild(li);
+        setInnerText('grand-tottal',tottalPrice);
         setInnerText('tottal-price',tottalPrice);
         setInnerText('seat-count',count);
         setInnerText('tottal-seat',count2);
         }
+       
         else {
             seat.setAttribute('disable' ,true)
         }
@@ -46,6 +48,46 @@ for (const seat of allSeat){
 function setInnerText(id, value){
     document.getElementById(id).innerText=value;
 } 
+// coupon code function
+const couponBtn =document.getElementById('coupon-btn');
+couponBtn.addEventListener('click',function(){
+    const couponElement = document.getElementById('coupon-field').value;
+    const couponCode =couponElement;
+    console.log(couponCode)
+    if(tottalPrice = 2200){
+        if(couponElement === 'NEW15'){
+            const grandTottal = document.getElementById('grand-tottal');
+            const discountGrandTottal =tottalPrice * 0.15;
+            const grandTottalPrice = tottalPrice - discountGrandTottal; 
+           grandTottal.innerText =grandTottalPrice;
+        //    document.getElementById('coupon-field').value=' ';
+        }
+        else if(couponElement === 'Couple 20' ){
+            const grandTottal = document.getElementById('grand-tottal');
+            const discountGrandTottal =tottalPrice * 0.2;
+            const grandTottalPrice = tottalPrice - discountGrandTottal; 
+           grandTottal.innerText =grandTottalPrice;
+        }
+        else{
+            alert('invalid coupon !')
+        }
+    }
+    else{
+        alert('Minimum seat buy 4')
+    }
+})
 
-const btn =document.getElementById('copon-btn');
-console.log(btn)
+
+
+// congratulatin section and coupon
+// function couponBtn(){
+//     const coupomSec =document.getElementById('coupon-div');
+//    coupomSec.classList.add('hidden')
+// }
+
+function congratulationSection (){
+    const congratulatinSec =document.getElementById('succes');
+    congratulatinSec.classList.remove('hidden')
+
+
+}
