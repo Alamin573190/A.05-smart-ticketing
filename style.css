@@ -21,3 +21,11 @@
     right:292px;
     top: 1410px;
 }
+
+.seat-price-containar li{
+    display: flex;
+    justify-content: space-between;
+list-style: none;
+
+
+}
